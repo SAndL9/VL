@@ -1,0 +1,18 @@
+//
+//  LLTravel.pch
+//  LLTravel
+//
+//  Created by lanouhn on 16/6/1.
+//  Copyright © 2016年 taobao. All rights reserved.
+//
+
+#ifndef LLTravel_pch
+#define LLTravel_pch
+
+#import "LLDefine.h"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* LLTravel_pch */

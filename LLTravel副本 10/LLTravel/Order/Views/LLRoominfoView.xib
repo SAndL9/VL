@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LLRoominfoView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBa-Iu-f2r">
+                    <rect key="frame" x="30" y="69" width="540" height="462"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阳台房" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kY-jY-8FA">
+                            <rect key="frame" x="10" y="10" width="45" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bwY-rd-P6d">
+                            <rect key="frame" x="0.0" y="38" width="540" height="374"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="面积" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7G-GE-x2b">
+                            <rect key="frame" x="0.0" y="417" width="179" height="20"/>
+                            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="JLc-ch-5Wp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="楼层" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uG2-d7-GQd">
+                            <rect key="frame" x="361" y="417" width="179" height="20"/>
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="入住人数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l10-66-JQ4">
+                            <rect key="frame" x="180" y="417" width="180" height="20"/>
+                            <color key="backgroundColor" red="1" green="0.2136060182" blue="0.23001215480000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK4-X9-bLu">
+                            <rect key="frame" x="0.0" y="442" width="179" height="20"/>
+                            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.44894935339999997" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuP-zN-ziX">
+                            <rect key="frame" x="180" y="442" width="180" height="20"/>
+                            <color key="backgroundColor" red="1" green="0.68150212210000005" blue="0.18359950219999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAU-KG-COx">
+                            <rect key="frame" x="361" y="442" width="179" height="20"/>
+                            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="xvq-MK-hKG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VK4-X9-bLu" firstAttribute="trailing" secondItem="G7G-GE-x2b" secondAttribute="trailing" id="53m-d1-raZ"/>
+                        <constraint firstItem="uG2-d7-GQd" firstAttribute="height" secondItem="G7G-GE-x2b" secondAttribute="height" id="9zF-DY-Bwg"/>
+                        <constraint firstAttribute="trailing" secondItem="uG2-d7-GQd" secondAttribute="trailing" id="AUf-sr-HTq"/>
+                        <constraint firstItem="4kY-jY-8FA" firstAttribute="leading" secondItem="dBa-Iu-f2r" secondAttribute="leading" constant="10" id="BnL-TM-Fyj"/>
+                        <constraint firstItem="YuP-zN-ziX" firstAttribute="height" secondItem="VK4-X9-bLu" secondAttribute="height" id="IEo-Fl-FOm"/>
+                        <constraint firstItem="YuP-zN-ziX" firstAttribute="top" secondItem="l10-66-JQ4" secondAttribute="bottom" constant="5" id="IOV-tm-PMh"/>
+                        <constraint firstItem="YAU-KG-COx" firstAttribute="leading" secondItem="uG2-d7-GQd" secondAttribute="leading" id="IbF-8Q-vtH"/>
+                        <constraint firstItem="YAU-KG-COx" firstAttribute="top" secondItem="uG2-d7-GQd" secondAttribute="bottom" constant="5" id="LxX-wk-wFR"/>
+                        <constraint firstItem="bwY-rd-P6d" firstAttribute="top" secondItem="4kY-jY-8FA" secondAttribute="bottom" constant="10" id="OaR-Vv-nDI"/>
+                        <constraint firstItem="uG2-d7-GQd" firstAttribute="leading" secondItem="l10-66-JQ4" secondAttribute="trailing" constant="1" id="QBN-To-r4L"/>
+                        <constraint firstAttribute="bottom" secondItem="bwY-rd-P6d" secondAttribute="bottom" constant="50" id="QbQ-d5-xqo"/>
+                        <constraint firstItem="l10-66-JQ4" firstAttribute="width" secondItem="G7G-GE-x2b" secondAttribute="width" id="RXk-Df-wKh"/>
+                        <constraint firstItem="G7G-GE-x2b" firstAttribute="leading" secondItem="dBa-Iu-f2r" secondAttribute="leading" id="RwY-El-hTI"/>
+                        <constraint firstItem="YAU-KG-COx" firstAttribute="trailing" secondItem="uG2-d7-GQd" secondAttribute="trailing" id="Tmu-w1-x8Q"/>
+                        <constraint firstItem="l10-66-JQ4" firstAttribute="height" secondItem="G7G-GE-x2b" secondAttribute="height" id="U2x-S8-SGr"/>
+                        <constraint firstItem="l10-66-JQ4" firstAttribute="centerY" secondItem="G7G-GE-x2b" secondAttribute="centerY" id="UKC-Jt-kit"/>
+                        <constraint firstItem="YAU-KG-COx" firstAttribute="height" secondItem="VK4-X9-bLu" secondAttribute="height" id="UuY-as-Df7"/>
+                        <constraint firstItem="4kY-jY-8FA" firstAttribute="top" secondItem="dBa-Iu-f2r" secondAttribute="top" constant="10" id="ZWD-YD-6lG"/>
+                        <constraint firstItem="G7G-GE-x2b" firstAttribute="top" secondItem="bwY-rd-P6d" secondAttribute="bottom" constant="5" id="aaA-gc-CSL"/>
+                        <constraint firstItem="VK4-X9-bLu" firstAttribute="top" secondItem="G7G-GE-x2b" secondAttribute="bottom" constant="5" id="bGr-vW-AwK"/>
+                        <constraint firstItem="VK4-X9-bLu" firstAttribute="leading" secondItem="dBa-Iu-f2r" secondAttribute="leading" id="eyc-cq-mMU"/>
+                        <constraint firstItem="bwY-rd-P6d" firstAttribute="leading" secondItem="dBa-Iu-f2r" secondAttribute="leading" id="f92-6I-f3J"/>
+                        <constraint firstItem="YuP-zN-ziX" firstAttribute="trailing" secondItem="l10-66-JQ4" secondAttribute="trailing" id="jVX-bz-qOx"/>
+                        <constraint firstAttribute="width" secondItem="dBa-Iu-f2r" secondAttribute="height" multiplier="7:6" id="k56-ot-BIQ"/>
+                        <constraint firstAttribute="trailing" secondItem="bwY-rd-P6d" secondAttribute="trailing" id="l1M-Rh-CzH"/>
+                        <constraint firstItem="uG2-d7-GQd" firstAttribute="centerY" secondItem="l10-66-JQ4" secondAttribute="centerY" id="o8k-zB-saC"/>
+                        <constraint firstItem="l10-66-JQ4" firstAttribute="leading" secondItem="G7G-GE-x2b" secondAttribute="trailing" constant="1" id="qdm-Uf-vFb"/>
+                        <constraint firstItem="YuP-zN-ziX" firstAttribute="leading" secondItem="l10-66-JQ4" secondAttribute="leading" id="sWn-BW-42I"/>
+                        <constraint firstItem="uG2-d7-GQd" firstAttribute="width" secondItem="G7G-GE-x2b" secondAttribute="width" id="tAz-OB-cZj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="0.63747306034482754" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dBa-Iu-f2r" secondAttribute="trailing" constant="30" id="0hZ-if-jYJ"/>
+                <constraint firstItem="dBa-Iu-f2r" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="cEl-aQ-BeR"/>
+                <constraint firstItem="dBa-Iu-f2r" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="oi3-fb-fSg"/>
+            </constraints>
+            <connections>
+                <outlet property="areaLab" destination="VK4-X9-bLu" id="1Eh-TX-YwE"/>
+                <outlet property="floorLab" destination="YAU-KG-COx" id="AoW-FC-t0X"/>
+                <outlet property="numLab" destination="YuP-zN-ziX" id="NkM-Og-ZDW"/>
+                <outlet property="roomImageView" destination="bwY-rd-P6d" id="LTB-r5-bja"/>
+                <outlet property="roomTypeLab" destination="4kY-jY-8FA" id="YWQ-fg-AWW"/>
+                <outletCollection property="gestureRecognizers" destination="TKT-eg-S3R" appends="YES" id="BXT-oo-cXa"/>
+            </connections>
+            <point key="canvasLocation" x="389" y="341"/>
+        </view>
+        <tapGestureRecognizer id="TKT-eg-S3R">
+            <connections>
+                <action selector="tapTheRoomViewAction:" destination="iN0-l3-epB" id="Qd0-nW-YnL"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

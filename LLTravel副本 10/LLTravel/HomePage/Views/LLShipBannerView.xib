@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LLShipBannerView">
+            <rect key="frame" x="0.0" y="0.0" width="547" height="81"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日韩航线" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URL-ip-K39">
+                    <rect key="frame" x="101" y="33" width="60" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="qws-C0-ln3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="香港出发" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXh-z0-mOR">
+                    <rect key="frame" x="302" y="33" width="60" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="taK-UJ-2iG">
+                    <rect key="frame" x="10" y="5" width="71" height="71"/>
+                    <color key="backgroundColor" red="0.42192377910000001" green="1" blue="0.33959396320000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="taK-UJ-2iG" secondAttribute="height" multiplier="1:1" id="v0Q-QZ-Yma"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VJF-ze-5Df">
+                    <rect key="frame" x="211" y="5" width="71" height="71"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="0.33103448275862069" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="KXh-z0-mOR" firstAttribute="leading" secondItem="VJF-ze-5Df" secondAttribute="trailing" constant="20" id="E8l-04-VZV"/>
+                <constraint firstItem="KXh-z0-mOR" firstAttribute="centerY" secondItem="URL-ip-K39" secondAttribute="centerY" id="GfE-g8-Faw"/>
+                <constraint firstItem="VJF-ze-5Df" firstAttribute="centerY" secondItem="taK-UJ-2iG" secondAttribute="centerY" id="IxV-od-GL7"/>
+                <constraint firstItem="VJF-ze-5Df" firstAttribute="leading" secondItem="URL-ip-K39" secondAttribute="trailing" constant="50" id="OSu-4k-vw1"/>
+                <constraint firstItem="KXh-z0-mOR" firstAttribute="width" secondItem="URL-ip-K39" secondAttribute="width" id="REo-Ef-212"/>
+                <constraint firstItem="taK-UJ-2iG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="SPu-gh-aK0"/>
+                <constraint firstItem="KXh-z0-mOR" firstAttribute="height" secondItem="URL-ip-K39" secondAttribute="height" id="d29-WT-dZc"/>
+                <constraint firstItem="URL-ip-K39" firstAttribute="leading" secondItem="taK-UJ-2iG" secondAttribute="trailing" constant="20" id="gxQ-mu-alp"/>
+                <constraint firstItem="VJF-ze-5Df" firstAttribute="height" secondItem="taK-UJ-2iG" secondAttribute="height" id="oPh-3z-eeU"/>
+                <constraint firstAttribute="bottom" secondItem="taK-UJ-2iG" secondAttribute="bottom" constant="5" id="phm-EY-RgN"/>
+                <constraint firstItem="URL-ip-K39" firstAttribute="centerY" secondItem="taK-UJ-2iG" secondAttribute="centerY" id="qa9-29-Cal"/>
+                <constraint firstItem="taK-UJ-2iG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="tZq-2E-jql"/>
+                <constraint firstItem="VJF-ze-5Df" firstAttribute="width" secondItem="taK-UJ-2iG" secondAttribute="width" id="ygy-MN-hrU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="LineLab" destination="URL-ip-K39" id="Vq5-iz-eXo"/>
+                <outlet property="portLab" destination="KXh-z0-mOR" id="oEO-Ys-Sh6"/>
+            </connections>
+            <point key="canvasLocation" x="383.5" y="114.5"/>
+        </view>
+        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="qe9-CP-lST">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+        </imageView>
+    </objects>
+</document>

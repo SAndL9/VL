@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LLProductFeatureCell" rowHeight="106" id="KGk-i7-Jjw" customClass="LLProductFeatureCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="产品特色.png" translatesAutoresizingMaskIntoConstraints="NO" id="MG2-D0-F5P">
+                        <rect key="frame" x="10" y="10" width="25" height="25"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产品特色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtU-2i-0rB">
+                        <rect key="frame" x="45" y="14" width="56" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tY2-YS-4KQ">
+                        <rect key="frame" x="10" y="51" width="300" height="49"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MG2-D0-F5P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="CYW-fq-57w"/>
+                    <constraint firstItem="tY2-YS-4KQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="CrR-dE-Bzf"/>
+                    <constraint firstItem="MG2-D0-F5P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="LtG-13-as4"/>
+                    <constraint firstAttribute="trailing" secondItem="tY2-YS-4KQ" secondAttribute="trailing" constant="10" id="MtV-d9-9Bv"/>
+                    <constraint firstItem="QtU-2i-0rB" firstAttribute="centerY" secondItem="MG2-D0-F5P" secondAttribute="centerY" id="PuT-er-5NN"/>
+                    <constraint firstItem="QtU-2i-0rB" firstAttribute="leading" secondItem="MG2-D0-F5P" secondAttribute="trailing" constant="10" id="QVd-DJ-ncG"/>
+                    <constraint firstAttribute="bottom" secondItem="tY2-YS-4KQ" secondAttribute="bottom" constant="5" id="efy-K1-9Hc"/>
+                    <constraint firstItem="tY2-YS-4KQ" firstAttribute="top" secondItem="QtU-2i-0rB" secondAttribute="bottom" constant="20" id="jly-ER-JXm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="featureLab" destination="tY2-YS-4KQ" id="M55-9e-EnT"/>
+            </connections>
+            <point key="canvasLocation" x="339" y="234"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="产品特色.png" width="25" height="25"/>
+    </resources>
+</document>

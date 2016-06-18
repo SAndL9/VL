@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LLFillOrderViewController">
+            <connections>
+                <outlet property="priceButton" destination="BOO-zs-fVw" id="JeY-W0-iTu"/>
+                <outlet property="tableView" destination="VcS-Ic-oIz" id="g4E-i4-tva"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOO-zs-fVw">
+                    <rect key="frame" x="0.0" y="560" width="300" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.74375912180000003" blue="0.18372140440000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="rvG-2y-uQM"/>
+                    </constraints>
+                    <state key="normal" title="订单总额"/>
+                    <connections>
+                        <action selector="priceButtonClicked:" destination="-1" eventType="touchUpInside" id="J00-CL-q8h"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="VcS-Ic-oIz">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="560"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="MdO-P9-qKN"/>
+                        <outlet property="delegate" destination="-1" id="J51-iR-exy"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43s-8Q-eOU">
+                    <rect key="frame" x="300" y="560" width="300" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.68150212210000005" blue="0.18359950219999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="nwW-39-r1r"/>
+                    </constraints>
+                    <state key="normal" title="订单"/>
+                    <connections>
+                        <action selector="submitOrderBtnClicked:" destination="-1" eventType="touchUpInside" id="yjp-BQ-dv4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VcS-Ic-oIz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GBE-kX-v10"/>
+                <constraint firstItem="BOO-zs-fVw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="H8U-2V-YPf"/>
+                <constraint firstAttribute="bottom" secondItem="VcS-Ic-oIz" secondAttribute="bottom" constant="40" id="Hc4-b4-T5O"/>
+                <constraint firstItem="43s-8Q-eOU" firstAttribute="width" secondItem="BOO-zs-fVw" secondAttribute="width" id="IBQ-fa-ldj"/>
+                <constraint firstAttribute="trailing" secondItem="43s-8Q-eOU" secondAttribute="trailing" id="LKP-lr-XKW"/>
+                <constraint firstItem="VcS-Ic-oIz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VEb-32-qaO"/>
+                <constraint firstAttribute="bottom" secondItem="43s-8Q-eOU" secondAttribute="bottom" id="anC-LW-EG2"/>
+                <constraint firstAttribute="bottom" secondItem="43s-8Q-eOU" secondAttribute="bottom" id="bQO-T6-Xqq"/>
+                <constraint firstItem="43s-8Q-eOU" firstAttribute="leading" secondItem="BOO-zs-fVw" secondAttribute="trailing" id="mkW-vo-Laz"/>
+                <constraint firstItem="43s-8Q-eOU" firstAttribute="height" secondItem="BOO-zs-fVw" secondAttribute="height" id="o6V-Hg-TvV"/>
+                <constraint firstAttribute="bottom" secondItem="43s-8Q-eOU" secondAttribute="bottom" id="tb3-xa-9fZ"/>
+                <constraint firstAttribute="bottom" secondItem="BOO-zs-fVw" secondAttribute="bottom" id="vKn-ik-naa"/>
+                <constraint firstAttribute="trailing" secondItem="VcS-Ic-oIz" secondAttribute="trailing" id="zRg-hq-HDS"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="anC-LW-EG2"/>
+                    <exclude reference="tb3-xa-9fZ"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

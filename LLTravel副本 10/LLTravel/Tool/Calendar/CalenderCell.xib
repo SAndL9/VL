@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalenderCell" id="gTV-IL-0wX" customClass="CalenderCell">
+            <rect key="frame" x="0.0" y="0.0" width="54" height="52.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="54" height="52.5"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdR-TC-23j">
+                        <rect key="frame" x="19" y="9" width="15" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_ship" translatesAutoresizingMaskIntoConstraints="NO" id="HQJ-wz-6Fu">
+                        <rect key="frame" x="19" y="28.5" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="9KX-xl-QPj"/>
+                            <constraint firstAttribute="width" constant="20" id="YP4-kC-xsA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9KX-xl-QPj"/>
+                                <exclude reference="YP4-kC-xsA"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="HQJ-wz-6Fu" firstAttribute="top" secondItem="OdR-TC-23j" secondAttribute="bottom" constant="5" id="HeJ-qA-86f"/>
+                <constraint firstItem="OdR-TC-23j" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="MAx-RZ-G5X"/>
+                <constraint firstItem="OdR-TC-23j" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-10" id="Q5z-ZK-n09"/>
+                <constraint firstItem="HQJ-wz-6Fu" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dZD-rM-e8z"/>
+                <constraint firstAttribute="bottom" secondItem="HQJ-wz-6Fu" secondAttribute="bottom" id="eWQ-f8-V3K"/>
+                <constraint firstItem="HQJ-wz-6Fu" firstAttribute="top" secondItem="OdR-TC-23j" secondAttribute="bottom" constant="5" id="xsl-2q-uFk"/>
+            </constraints>
+            <size key="customSize" width="54" height="52.5"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="HeJ-qA-86f"/>
+                    <exclude reference="eWQ-f8-V3K"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="dateLabel" destination="OdR-TC-23j" id="hBW-Jc-YWI"/>
+                <outlet property="signImageView" destination="HQJ-wz-6Fu" id="pDh-vs-bS1"/>
+            </connections>
+            <point key="canvasLocation" x="352" y="188.25"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_ship" width="16" height="16"/>
+    </resources>
+</document>

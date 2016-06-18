@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qHQ-KG-jnv" customClass="LLPeripheralFeatureSpotView">
+            <rect key="frame" x="0.0" y="0.0" width="491" height="538"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周边景点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lil-QU-aZn">
+                    <rect key="frame" x="10" y="10" width="56" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drQ-7A-mPL">
+                    <rect key="frame" x="248" y="37" width="233" height="140"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="5"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="clickedTheButton:" destination="qHQ-KG-jnv" eventType="touchUpInside" id="acU-FA-ZGN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9z-9v-HOp">
+                    <rect key="frame" x="10" y="182" width="233" height="140"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="clickedTheButton:" destination="qHQ-KG-jnv" eventType="touchUpInside" id="nQQ-bD-U2d"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7v-Do-JsA">
+                    <rect key="frame" x="248" y="182" width="233" height="140"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="5"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="clickedTheButton:" destination="qHQ-KG-jnv" eventType="touchUpInside" id="rBW-GL-N6H"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eat-p0-Oib">
+                    <rect key="frame" x="10" y="327" width="471" height="201"/>
+                    <color key="backgroundColor" red="0.42192377910000001" green="1" blue="0.33959396320000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="clickedTheStewardButton:" destination="qHQ-KG-jnv" eventType="touchUpInside" id="a1p-21-ABO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNq-Eq-mIi">
+                    <rect key="frame" x="10" y="37" width="233" height="140"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="iNq-Eq-mIi" secondAttribute="height" multiplier="5:3" id="VZn-b5-CXg"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="5"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="clickedTheButton:" destination="qHQ-KG-jnv" eventType="touchUpInside" id="LDM-iW-RyS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQE-Sj-rQS">
+                    <rect key="frame" x="432" y="4" width="49" height="30"/>
+                    <state key="normal" title="更多&gt;&gt;"/>
+                    <connections>
+                        <action selector="moreButtonClicked:" destination="qHQ-KG-jnv" eventType="touchUpInside" id="05e-fu-BRR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CQE-Sj-rQS" secondAttribute="trailing" constant="10" id="1bX-20-Tkr"/>
+                <constraint firstItem="e7v-Do-JsA" firstAttribute="width" secondItem="drQ-7A-mPL" secondAttribute="width" id="3qX-Gr-76U"/>
+                <constraint firstItem="e7v-Do-JsA" firstAttribute="height" secondItem="drQ-7A-mPL" secondAttribute="height" id="Aoo-Kg-BH3"/>
+                <constraint firstItem="iNq-Eq-mIi" firstAttribute="top" secondItem="lil-QU-aZn" secondAttribute="bottom" constant="10" id="CFT-KB-7IB"/>
+                <constraint firstItem="lil-QU-aZn" firstAttribute="top" secondItem="qHQ-KG-jnv" secondAttribute="top" constant="10" id="CbC-X8-6Rm"/>
+                <constraint firstItem="h9z-9v-HOp" firstAttribute="width" secondItem="iNq-Eq-mIi" secondAttribute="width" id="Cm4-hl-D1g"/>
+                <constraint firstAttribute="trailing" secondItem="Eat-p0-Oib" secondAttribute="trailing" constant="10" id="EFU-Z8-d6r"/>
+                <constraint firstItem="drQ-7A-mPL" firstAttribute="height" secondItem="iNq-Eq-mIi" secondAttribute="height" id="GWy-qJ-CE2"/>
+                <constraint firstItem="Eat-p0-Oib" firstAttribute="top" secondItem="h9z-9v-HOp" secondAttribute="bottom" constant="5" id="Ghl-hI-Chx"/>
+                <constraint firstItem="e7v-Do-JsA" firstAttribute="centerY" secondItem="h9z-9v-HOp" secondAttribute="centerY" id="Mfx-pR-8Ac"/>
+                <constraint firstItem="e7v-Do-JsA" firstAttribute="centerX" secondItem="drQ-7A-mPL" secondAttribute="centerX" id="Ner-BM-udh"/>
+                <constraint firstItem="h9z-9v-HOp" firstAttribute="centerX" secondItem="iNq-Eq-mIi" secondAttribute="centerX" id="Yft-tb-zVl"/>
+                <constraint firstItem="CQE-Sj-rQS" firstAttribute="centerY" secondItem="lil-QU-aZn" secondAttribute="centerY" id="aC1-JR-CN3"/>
+                <constraint firstItem="Eat-p0-Oib" firstAttribute="leading" secondItem="qHQ-KG-jnv" secondAttribute="leading" constant="10" id="dfM-u8-xpB"/>
+                <constraint firstItem="h9z-9v-HOp" firstAttribute="height" secondItem="iNq-Eq-mIi" secondAttribute="height" id="ehT-Hq-ErP"/>
+                <constraint firstItem="drQ-7A-mPL" firstAttribute="width" secondItem="iNq-Eq-mIi" secondAttribute="width" id="f2J-9f-bnl"/>
+                <constraint firstItem="drQ-7A-mPL" firstAttribute="leading" secondItem="iNq-Eq-mIi" secondAttribute="trailing" constant="5" id="fUB-ZW-AKb"/>
+                <constraint firstItem="drQ-7A-mPL" firstAttribute="centerY" secondItem="iNq-Eq-mIi" secondAttribute="centerY" id="gDE-xj-m02"/>
+                <constraint firstItem="h9z-9v-HOp" firstAttribute="top" secondItem="iNq-Eq-mIi" secondAttribute="bottom" constant="5" id="i94-a9-N7V"/>
+                <constraint firstItem="lil-QU-aZn" firstAttribute="leading" secondItem="qHQ-KG-jnv" secondAttribute="leading" constant="10" id="kul-XQ-35D"/>
+                <constraint firstAttribute="trailing" secondItem="drQ-7A-mPL" secondAttribute="trailing" constant="10" id="p56-fc-GRv"/>
+                <constraint firstItem="iNq-Eq-mIi" firstAttribute="leading" secondItem="qHQ-KG-jnv" secondAttribute="leading" constant="10" id="t1V-fC-V1g"/>
+                <constraint firstAttribute="bottom" secondItem="Eat-p0-Oib" secondAttribute="bottom" constant="10" id="uBq-T2-xJ1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="StewardButton" destination="Eat-p0-Oib" id="iO4-WB-taE"/>
+                <outlet property="leftBottomButton" destination="h9z-9v-HOp" id="zEG-8o-gF1"/>
+                <outlet property="leftTopButton" destination="iNq-Eq-mIi" id="UXj-LK-klB"/>
+                <outlet property="rightBottomButton" destination="e7v-Do-JsA" id="cGI-GF-fO7"/>
+                <outlet property="rightTopButton" destination="drQ-7A-mPL" id="adl-0c-ijn"/>
+            </connections>
+            <point key="canvasLocation" x="481.5" y="479"/>
+        </view>
+    </objects>
+</document>
