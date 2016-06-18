@@ -10,7 +10,6 @@
 
 #import "LLHomePageViewController.h"
 #import <CoreLocation/CoreLocation.h>
-
 #import <SDCycleScrollView/SDCycleScrollView.h>
 #import "LLCustomView.h"
 #import "LLBannerView.h"
@@ -466,7 +465,6 @@ static NSString *cellID = @"cellid";
             
             [self.TraveDataArray addObject:TraveModel];
             
-//            NSLog(@"pppppppp ===== %@",self.TraveDataArray);
             [self.travelDestinationView UpDataButtonArray:self.TraveDataArray];
         }
         
